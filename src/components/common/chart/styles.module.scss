@@ -1,0 +1,75 @@
+@import "shared";
+
+.graph-container {
+  padding: rem(32px);
+  background-color: #fff;
+
+  max-height: 100%;
+
+  &.horizontal {
+    flex: 1 1;
+
+    @include flex-align-center;
+
+    .text-container {
+      flex-direction: column;
+
+      @include flex-align-center;
+
+      h2,
+      p {
+        white-space: nowrap;
+      }
+    }
+
+    .graph-head {
+      margin-right: rem(32px);
+    }
+  }
+}
+
+.graph-head {
+  @include flex-align-center;
+}
+
+.text-container {
+  margin-right: auto;
+}
+
+.big-text {
+  text-align: center;
+  margin-top: rem(40px);
+  margin-bottom: rem(50px);
+
+  font-weight: 600;
+  color: #546a79;
+  font-size: rem(32px);
+}
+
+.export-pdf {
+  align-self: flex-start;
+
+  text-decoration: underline;
+  color: #a1b1c2;
+
+  @include reset-button;
+
+  margin-top: rem(42px);
+
+  &:hover {
+    color: #8998a8;
+  }
+}
+
+.text-container {
+  h2 {
+    font-size: rem(24px);
+    font-weight: 600;
+    color: var(--text-primary-2);
+    margin-bottom: rem(10px);
+  }
+
+  p {
+    color: var(--text-primary-2);
+  }
+}

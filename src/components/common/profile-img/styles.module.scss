@@ -1,0 +1,8 @@
+@import "shared";
+
+.container {
+  @include flex-center-center;
+  width: rem(33px);
+  height: rem(33px);
+  border-radius: 50%;
+}

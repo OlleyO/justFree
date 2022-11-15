@@ -1,0 +1,79 @@
+@import "shared";
+
+.project-card-container {
+  background-color: #fff;
+  padding: rem(20px);
+
+  height: rem(102px);
+
+  padding-right: rem(120px);
+
+  @include flex-align-center;
+}
+
+.img-container {
+  flex: 0.2;
+}
+
+.text {
+  flex: 1;
+}
+
+.separator {
+  height: rem(25px);
+  width: 2px;
+  margin: 0 rem(30px);
+  background-color: #dbe1e8;
+}
+
+.time-spent {
+  flex: 0.3;
+}
+
+.messages {
+  flex: 0.7;
+}
+
+.progress {
+  flex: 1;
+  max-width: rem(300px);
+}
+
+.messages,
+.time-spent {
+  @include flex-align-center;
+  gap: rem(11px);
+}
+
+.icon {
+  width: rem(17px);
+  height: rem(17px);
+}
+
+.text {
+  color: var(--text-primary-2);
+
+  h3 {
+    font-size: rem(24px);
+    font-weight: 600;
+    margin-bottom: rem(5px);
+  }
+}
+
+.last-updated {
+  color: #a1b1c2;
+
+  & > span {
+    margin-right: rem(5px);
+  }
+
+  & span:last-child {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+}
+
+.time-spent,
+.messages {
+  color: var(--text-primary);
+}

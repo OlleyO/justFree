@@ -1,0 +1,28 @@
+@import "shared";
+
+.legend {
+  @include flex-align-center;
+}
+
+.color-marker {
+  width: rem(10px);
+  height: rem(10px);
+  border-radius: 50%;
+
+  margin-right: rem(10px);
+}
+
+.company-name {
+  flex: 1;
+  margin-right: rem(50px);
+}
+
+.value {
+  text-align: right;
+  font-weight: 700;
+}
+
+.company-name,
+.value {
+  color: var(--text-primary);
+}

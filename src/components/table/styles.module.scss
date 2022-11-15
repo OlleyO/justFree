@@ -1,0 +1,87 @@
+@import "shared";
+
+.table {
+  display: grid;
+
+  position: relative;
+
+  align-self: stretch;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: rem(39px);
+
+  .table-border {
+    position: absolute;
+    background-color: #e9edf1;
+
+    &.table-border-top {
+      top: 0;
+      left: 0;
+    }
+
+    &.table-border-bottom {
+      bottom: 0;
+      left: 0;
+    }
+
+    &.table-border-middle-horizontal {
+      left: 0;
+      top: calc(50% - 1px);
+    }
+
+    &.table-border-middle-vertical {
+      left: calc(50% - 1px);
+    }
+
+    &.table-border-bottom,
+    &.table-border-top,
+    &.table-border-middle-horizontal {
+      width: 100%;
+      height: rem(2px);
+    }
+
+    &.table-border-middle-vertical {
+      height: 100%;
+      width: rem(2px);
+    }
+  }
+}
+
+.cell {
+  padding: rem(22px) rem(29px);
+
+  display: flex;
+  flex-direction: column;
+  gap: rem(6px);
+
+  .label {
+    color: #a1b1c2;
+  }
+
+  .value {
+    color: var(--text-primary-2);
+    font-size: rem(18px);
+    font-weight: 500;
+  }
+}
+
+.send-invoice {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none;
+
+  color: var(--blue);
+  font-size: rem(16px);
+
+  transition: color 0.5s;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #469ab7;
+  }
+}

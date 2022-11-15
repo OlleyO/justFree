@@ -1,0 +1,29 @@
+@import "shared";
+
+.left-navbar {
+  width: rem(231px);
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background-color: var(--left-navbar-bg);
+}
+
+.just-free {
+  @include flex-center-center;
+  padding: rem(27px) 0;
+
+  color: #fff;
+
+  font-size: rem(18px);
+
+  .right {
+    font-weight: 600;
+  }
+
+  .left {
+    font-weight: 300;
+  }
+}

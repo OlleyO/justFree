@@ -1,0 +1,13 @@
+@import "shared";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: rem(231px);
+  padding-top: rem(71px);
+}
+
+.main {
+  padding: rem(51px) rem(69px);
+}

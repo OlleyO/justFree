@@ -1,0 +1,39 @@
+@import "shared";
+
+.page-404 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--page-bg);
+
+  flex-direction: column;
+
+  gap: rem(25px);
+
+  h1 {
+    font-size: rem(160px);
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: rem(40px);
+    font-weight: 300;
+    color: var(--text-primary);
+  }
+
+  a {
+    font-size: rem(40px);
+    font-weight: 500;
+    color: var(--blue);
+
+    transition: color 1s;
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+}

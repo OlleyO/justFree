@@ -1,0 +1,46 @@
+@use "sass:math";
+@use "functions";
+
+:root {
+  --page-bg: #f0f3f6;
+  --pink: #fc4c7a;
+  --green: #4bcf99;
+  --blue: #59c2e6;
+  --orange: #fe974b;
+  --text-primary: #7e8e9f;
+  --text-primary-2: #4f5f6f;
+  --left-navbar-bg: #4f5f6f;
+  --border: #bcc7d366;
+}
+
+*,
+html,
+#__next,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+#__next {
+  font-size: (functions.$root-font-size / 16px) * 100%;
+}
+
+.react-icon {
+  width: functions.rem(17px);
+  height: functions.rem(17px);
+}
+
+body {
+  background-color: var(--page-bg);
+}
+
+.h2 {
+  font-size: functions.rem(24px);
+  font-weight: 600;
+  margin-bottom: functions.rem(5px);
+}
+
+.h2,
+.p {
+  color: #4f5f6f;
+}

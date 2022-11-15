@@ -1,0 +1,17 @@
+@import "shared";
+
+.card {
+  flex: 1 1 rem(376px);
+  background-color: #fff;
+  padding: rem(29px) rem(20px);
+  height: rem(506px);
+
+  flex-direction: column;
+
+  @include flex-align-center;
+
+  &.noSidePadding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

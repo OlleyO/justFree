@@ -1,0 +1,62 @@
+@import "shared";
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+
+  z-index: 999;
+
+  @include flex-align-center;
+
+  height: rem(71px);
+  width: calc(100vw - rem(231px));
+  background-color: #d7dde4;
+
+  padding: 0 rem(33px);
+}
+
+.search-input-group {
+  @include flex-align-center;
+
+  color: var(--text-primary);
+
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: rem(17px);
+
+    font-size: rem(14px);
+  }
+
+  ::placeholder {
+    color: var(--text-primary);
+  }
+
+  .icon-search {
+    width: rem(21px);
+    height: rem(21px);
+  }
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  @include flex-align-center;
+}
+
+.mg-r-13 {
+  margin-right: rem(13px);
+}
+
+.mg-r-20 {
+  margin-right: rem(20px);
+}
+
+.separator {
+  width: 3px;
+  height: rem(25px);
+  background-color: #a1b1c280;
+}

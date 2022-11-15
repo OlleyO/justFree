@@ -1,0 +1,17 @@
+@import "shared";
+
+.progress {
+  width: rem(200px);
+  position: relative;
+  border-radius: rem(12px);
+  height: rem(7px);
+  background-color: #dbe1e8;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: inherit;
+}

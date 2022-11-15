@@ -1,0 +1,27 @@
+@import "shared";
+
+.nav-item {
+  padding: rem(21px);
+
+  @include flex-align-center;
+
+  color: var(--text-primary);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: rem(15px);
+  }
+
+  text-decoration: none;
+
+  &--active {
+    background-color: var(--blue);
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #40505f;
+    color: #fff;
+  }
+}
